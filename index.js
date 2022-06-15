@@ -80,6 +80,11 @@ function loadSeafood(){
 
 }
 
+function refreshButton() {
+    document.querySelector('#refresh')
+    .addEventListener('click', () => {location.reload()})
+}
+
 
 // wait for DOM to load to do stuff
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -93,5 +98,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     loadSeafood()
 
     // BONUS: Add a button, add an event listener to it to reload the random image
+    refreshButton()
 
 })
